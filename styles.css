@@ -159,7 +159,13 @@ button {
     height: 600px;
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
+
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20vw;
+    }
     .nav-links {
         position: absolute;
         right: 0px;
@@ -202,5 +208,24 @@ button {
     .big-text {
         font-size: 100px; 
         text-align: left;
+    }
+}
+
+@media (max-width: 400px) {
+    * {
+        gap:0;
+        font-size: small;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: none;
+        text-align: center;
+    }
+
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+        gap: none;
     }
 }
