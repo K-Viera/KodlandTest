@@ -224,6 +224,10 @@ button {
         font-size: 100px;
         text-align: left;
     }
+
+    .container {
+        padding: 30px; 
+    }
 }
 
 @media (max-width: 550px) {
@@ -231,7 +235,9 @@ button {
         gap: 0;
         font-size: small;
     }
-
+    .container {
+        padding: 10px; 
+    }
     .grid-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
